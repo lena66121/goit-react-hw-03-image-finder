@@ -16,36 +16,6 @@ class App extends Component {
     query: '',
   };
 
-  // componentDidMount() {
-  //   const { currentPage, query } = this.state;
-
-  //   fetchAPIdata({ API_KEY, currentPage, query }).then(data =>
-  //     this.setState({
-  //       images: [...data],
-  //     }),
-  //   );
-  // }
-
-  // componentDidUpdate(prevProps, prevState) {
-  //   const { query, currentPage, images } = this.state;
-
-  //   if (prevState.query === query && prevState.currentPage !== currentPage) {
-  //     fetchAPIdata({ API_KEY, query, currentPage }).then(data => {
-  //       this.setState(
-  //         {
-  //           images: [...images, ...data],
-  //         },
-  //         () => {
-  //           window.scrollTo({
-  //             top: document.body.scrollHeight,
-  //             behavior: 'smooth',
-  //           });
-  //         },
-  //       );
-  //     });
-  //   }
-  // }
-
   fetchImages = () => {
     this.setState(
       {
